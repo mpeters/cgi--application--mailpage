@@ -1,0 +1,39 @@
+--- #YAML:1.0
+name: CGI-Application-MailPage
+version: 1.6
+author:
+  - Copyright 2002, Sam Tregar (sam@tregar.com).
+  - |-
+    Co-maintainer Michael Peters (mpeters@plusthree.com).
+  - |-
+    Questions, bug reports and suggestions can be sent to the
+    CGI::Application mailing list.  You can subscribe by sending a blank
+    message to cgiapp-subscribe@lists.vm.com.  See you there!
+abstract: |-
+  module to allow users to send HTML pages to friends.
+license: perl
+requires:
+  CGI::Application: 3.2
+  Data::FormValidator: 3
+  Email::Valid: 0
+  Fcntl: 0
+  File::Spec: 0
+  HTML::Template: 0
+  HTML::TreeBuilder: 0
+  HTTP::Date: 0
+  HTTP::Request: 0
+  LWP::UserAgent: 0
+  MIME::Entity: 0
+  Mail::Header: 0
+  Mail::Internet: 0
+  Net::SMTP: 0
+  Text::Format: 0
+  URI: 0
+  perl: 5.6.1
+build_requires:
+  Test::LongString: 0
+provides:
+  CGI::Application::MailPage:
+    file: lib/CGI/Application/MailPage.pm
+    version: 1.6
+generated_by: Module::Build version 0.2611
