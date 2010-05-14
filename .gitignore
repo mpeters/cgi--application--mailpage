@@ -1,0 +1,16 @@
+*~
+*.bak
+*.swo
+*.swp
+Build
+TODO
+_build
+blib
+data
+logs/*
+notes
+z-backup
+*META.*
+*.SKIP
+*.skip
+CGI-Application-MailPage-*
