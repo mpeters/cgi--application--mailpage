@@ -1,5 +1,5 @@
 package CGI::Application::MailPage;
-
+use base 'CGI::Application';
 use strict;
 use CGI::Application;
 use File::Spec;
@@ -15,9 +15,8 @@ use Text::Format;
 use URI;
 use Data::FormValidator;
 use Fcntl qw(:flock);
-use base 'CGI::Application';
 
-$CGI::Application::VERSION = '1.6';
+$CGI::Application::MailPage::VERSION = '1.7';
 
 sub setup {
     my $self = shift;
