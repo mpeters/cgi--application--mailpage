@@ -1,17 +1,23 @@
---- #YAML:1.0
-name: CGI-Application-MailPage
-version: 1.6
+---
+abstract: 'module to allow users to send HTML pages to friends.'
 author:
-  - Copyright 2002, Sam Tregar (sam@tregar.com).
-  - |-
-    Co-maintainer Michael Peters (mpeters@plusthree.com).
-  - |-
-    Questions, bug reports and suggestions can be sent to the
-    CGI::Application mailing list.  You can subscribe by sending a blank
-    message to cgiapp-subscribe@lists.vm.com.  See you there!
-abstract: |-
-  module to allow users to send HTML pages to friends.
+  - 'Copyright 2002, Sam Tregar (sam@tregar.com).'
+  - 'Co-maintainer Michael Peters (mpeters@plusthree.com).'
+  - "Questions, bug reports and suggestions can be sent to the\nCGI::Application mailing list.  You can subscribe by sending a blank\nmessage to cgiapp-subscribe@lists.vm.com.  See you there!"
+build_requires:
+  Test::LongString: 0
+configure_requires:
+  Module::Build: 0.36
+generated_by: 'Module::Build version 0.3603'
 license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: CGI-Application-MailPage
+provides:
+  CGI::Application::MailPage:
+    file: lib/CGI/Application/MailPage.pm
+    version: 1.7
 requires:
   CGI::Application: 3.2
   Data::FormValidator: 3
@@ -29,11 +35,7 @@ requires:
   Net::SMTP: 0
   Text::Format: 0
   URI: 0
-  perl: 5.6.1
-build_requires:
-  Test::LongString: 0
-provides:
-  CGI::Application::MailPage:
-    file: lib/CGI/Application/MailPage.pm
-    version: 1.6
-generated_by: Module::Build version 0.2611
+  perl: v5.6.1
+resources:
+  license: http://dev.perl.org/licenses/
+version: 1.7
