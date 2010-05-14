@@ -1,7 +1,7 @@
 Revision history for Perl extension CGI::Application::MailPage.
 
 1.7 (May 14, 2010)
-    - Fixed problem with our $VERSION (RT #57477) - gary@sitesuite.com.au
+    - Fixed problem with our $VERSION (RT #57477 && RT #41697) - gary@sitesuite.com.au
 
 1.6 (Oct 31, 2005)
     - Fixed vulnerability where newlines could be embedded in subject, 
